@@ -55,7 +55,7 @@ pigpioデーモンの起動の自動化
 
 ### 起動
 
-`docker run -p 80:80 --net host light_switcher`
+`docker run -d -p 80:80 --net host light_switcher`
 
 ## ライセンス
 
