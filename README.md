@@ -27,15 +27,25 @@ DCサーボモーターを照明のスイッチに固定することで、物理
 
 ### 事前準備
 
+下記のコマンドを実行し、5 Interfacing Options -> P8 Remote GPIOからRemote GPIOをenabledにしてください。 
+
+`sudo raspi-config`
+
+以降の事前準備の作業は、setup.shを実行することで省略できます。
+
+Dockerのインストール
+
+`curl -fsSL https://get.docker.com -o get-docker.sh && sudo sh get-docker.sh`
+
 pigpioのインストール
 
 `sudo apt install pigpio && pip3 install pigpio`
 
-pigpioの起動(起動していない場合 or デーモン化していない場合)
+pigpioデーモンの起動(起動していない場合 or デーモンの起動を自動化していない場合)
 
 `sudo gpiod`
 
-pigpioのデーモン化(pigpioの自動起動化)
+pigpioデーモンの起動の自動化
 
 `sudo systemctl enable pigpiod.service && sudo reboot`
 
