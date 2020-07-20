@@ -39,7 +39,7 @@ Dockerのインストール
 
 pigpioのインストール
 
-`sudo apt install pigpio && pip3 install pigpio`
+`sudo apt install -y pigpio && pip3 install pigpio`
 
 pigpioデーモンの起動(起動していない場合 or デーモンの起動を自動化していない場合)
 

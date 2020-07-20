@@ -6,7 +6,7 @@ sh get-docker.sh
 rm get-docker.sh
 
 # Install pigpio
-apt install pigpio
+apt install -y pigpio
 pip3 install pigpio
 
 # Automate running pigpio daemon
